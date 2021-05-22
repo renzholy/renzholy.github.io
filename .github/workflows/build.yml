@@ -10,10 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
 
       - name: blogit-bot
-        uses: renzholy/blogit@v0.0.10
+        uses: renzholy/blogit@v0.0.11
         env:
           GHP: ${{ secrets.GITHUB_TOKEN }}
           NEXT_PUBLIC_OWNER: renzholy
@@ -21,3 +21,12 @@ jobs:
           NEXT_PUBLIC_BRANCH: main
           NEXT_PUBLIC_INDEX: README
           NEXT_PUBLIC_LINKS: Home,README;About,ABOUT;GitHub,https://github.com/renzholy;Twitter,http://twitter.com/rezholy;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: out
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
