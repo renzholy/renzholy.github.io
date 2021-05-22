@@ -13,11 +13,11 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: blogit-bot
-        uses: renzholy/blogit@v0.0.8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          owner: renzholy
-          repo: blog
-          branch: main
-          index: README
-          links: Home,README;About,ABOUT;GitHub,https://github.com/renzholy;Twitter,http://twitter.com/rezholy;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
+        uses: renzholy/blogit@v0.0.9
+        env:
+          GHP: ${{ secrets.GITHUB_TOKEN }}
+          NEXT_PUBLIC_OWNER: renzholy
+          NEXT_PUBLIC_REPO: blog
+          NEXT_PUBLIC_BRANCH: main
+          NEXT_PUBLIC_INDEX: README
+          NEXT_PUBLIC_LINKS: Home,README;About,ABOUT;GitHub,https://github.com/renzholy;Twitter,http://twitter.com/rezholy;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
