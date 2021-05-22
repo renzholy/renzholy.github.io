@@ -14,7 +14,7 @@ jobs:
 
       - name: blogit-bot
         uses: renzholy/blogit@v0.0.7
-        env:
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: renzholy
           repo: blog
