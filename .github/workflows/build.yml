@@ -13,7 +13,7 @@ jobs:
       # - uses: actions/checkout@v2
 
       - name: blogit-bot
-        uses: renzholy/blogit@v0.0.13
+        uses: renzholy/blogit@v0.0.14
         env:
           GHP: ${{ secrets.GITHUB_TOKEN }}
           NEXT_PUBLIC_OWNER: renzholy
