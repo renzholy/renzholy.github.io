@@ -2,6 +2,7 @@
 
 ## Weekly
 
+- [11 🆕](/weekly/11.md)
 - [10](/weekly/10.md)
 - [9](/weekly/9.md)
 - [8](/weekly/8.md)
@@ -16,4 +17,4 @@
 
 ## WASM
 
-- [0](/wasm/0.md)
+- [0 🔥](/wasm/0.md)
