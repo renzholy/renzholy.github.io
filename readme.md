@@ -1,5 +1,3 @@
-# Found Pan Tiger
-
 ## Weekly
 
 - [12 🆕](/weekly/12.md)
