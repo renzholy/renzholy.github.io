@@ -56,4 +56,4 @@
 
 在 Youtube 上找了几个 4K HDR 视频看。非全屏状态下，使用 Chrome 时，视频那个区域的亮度和其他部分不一样；使用 Safari 时，整个屏幕的亮度随视频内容而变化。明暗对比强烈，色彩鲜艳。
 
-播放本地视频时，iina、VLC、Movist、Optimus Player 均无法正常 HDR。按照网上的说法，我使用`ffprobe -v error -show_streams -select_streams v:0 -of json -i video.mkv`命令查看视频文件的色彩空间是`BT.2020`，说明确实是 HDR 视频文件，不知问题出在哪里。或许 QuickTime 可以，但它不支持 mkv 封装，之后下载到合适的视频资源再试试。
+播放本地视频时，iina、VLC、Movist、Optimus Player 均无法正常 HDR。按照网上的说法，我使用`ffprobe -v error -show_streams -select_streams v:0 -of json -i video.mkv`命令查看视频文件的色彩空间是`BT.2020`，说明确实是 HDR 视频文件，不知问题出在哪里。我又用`ffmpeg -i video.mkv -c copy -tag:v hvc1 video.mp4`把它转成 MP4 封装，使用 Quick Time 播放，仍然看不出有 HDR 的效果。

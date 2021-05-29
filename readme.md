@@ -2,7 +2,8 @@
 
 ## Weekly
 
-- [11 🆕](/weekly/11.md)
+- [12 🆕](/weekly/12.md)
+- [11](/weekly/11.md)
 - [10](/weekly/10.md)
 - [9](/weekly/9.md)
 - [8](/weekly/8.md)
@@ -17,8 +18,8 @@
 
 ## WASM
 
-- [0 🔥](/wasm/0.md)
+- [0](/wasm/0.md)
 
 ## Misc
 
-- [这些年用过的显示器 🆕](/misc/monitors.md)
+- [这些年用过的显示器](/misc/monitors.md)
