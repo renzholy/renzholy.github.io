@@ -13,11 +13,12 @@ jobs:
       - name: blogit-bot
         uses: renzholy/blogit@v0.0.17
         env:
-          GHP: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NEXT_PUBLIC_OWNER: renzholy
           NEXT_PUBLIC_REPO: renzholy.github.io
           NEXT_PUBLIC_BRANCH: main
-          NEXT_PUBLIC_INDEX: readme
+          NEXT_PUBLIC_TITLE: Found Pan Tiger
+          NEXT_PUBLIC_INDEX: /readme
           NEXT_PUBLIC_LINKS: Home,/readme;About,/about;GitHub,https://github.com/renzholy;Twitter,http://twitter.com/renzholy;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
 
       - name: Deploy to GitHub Pages
