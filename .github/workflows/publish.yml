@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Static Files
-        uses: renzholy/blogit@v0.1.3
+        uses: renzholy/blogit@v0.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEXT_PUBLIC_CNAME: fpt.ink
           NEXT_PUBLIC_TITLE: Found Pan Tiger
           NEXT_PUBLIC_INDEX: /readme
           NEXT_PUBLIC_HEADER: About,/about
