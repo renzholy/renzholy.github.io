@@ -19,11 +19,11 @@
 
 ## WASM
 
-- [0](/wasm/0.md)
+- [输入与输出](/wasm/输入与输出.md)
 
-## Misc
+## 3C
 
-- [这些年用过的显示器](/3c/monitors.md)
+- [用过的显示器](/3c/monitors.md)
 
 ## 笔记
 
