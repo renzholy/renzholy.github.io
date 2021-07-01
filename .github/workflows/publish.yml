@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Static Files
-        uses: renzholy/blogit@v0.1.5
+        uses: renzholy/blogit@v0.1.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NEXT_PUBLIC_CNAME: fpt.ink
