@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Static Files
-        uses: renzholy/blogit@v0.1.6
+        uses: renzholy/blogit@v0.1.7
         with:
           title: Found Pan Tiger
           index: /readme
