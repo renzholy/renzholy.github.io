@@ -1,26 +1,12 @@
-# Blockchain Buzzwords Explained
+# Bitcoin & Blockchain
 
-<span style='color: gray'>区块链词语解释</span>
-
-本文会用白话来解释你经常听到的区块链相关词语，不会涉及原理或技术细节，也不构成任何投资建议。
-
-每个条目结构如下：
-
----
-
-## Buzzword
-
-<span style='color: gray'>中文译名</span>
-
-一句话解释。
-
-更多详细解释（不一定有）。
-
----
+<span style='color: gray'>比特币与区块链</span>
 
 ## Bitcoin
 
 <span style='color: gray'>比特币</span>
+
+两种含义：一种 [blockchain](#blockchain) 技术；一种可以交易的 [token](#token)。
 
 ### Satoshi Nakamoto
 
@@ -28,7 +14,7 @@
 
 [bitcoin](#bitcoin) 创造者对自己的称呼。
 
-很多人自称是 [bitcoin](#bitcoin) 创造者，但都拿不出证据。如果有个人能够使用中本聪在 [genesis block](#genesis_block) 中的 [address](#address) `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` 进行一次 [transaction](#transaction)，并在此之前向大众公布该 transaction 的细节，那么就说明这个 transaction 是由 TA 签发，就能够证明 TA 是中本聪（或者是偷了中本聪的 [wallet](#wallet) 的人）。
+很多人自称是 [bitcoin](#bitcoin) 创造者，但都拿不出证据。如果有个人能够使用中本聪在 [genesis block](#genesis_block) 中的 [address](#address) `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` 进行一次 [transaction](#transaction)，并在此之前向大众公布该 transaction 的细节，那么就说明 TA 拥有这个 [wallet](#wallet) 的 [private key](#private-key) ，就能够证明 TA 是中本聪（或者是偷了中本聪的 wallet 的人）。
 
 ### Blockchain
 
@@ -79,6 +65,8 @@
 <span style='color: gray'>区块浏览器</span>
 
 用于浏览 [blockchain](#blockchain) 中的数据的 App，一般是网页。
+
+基本上每个 [blockchain](#blockchain) 都有一个或多个官方或第三方提供的浏览器。
 
 #### Gas
 
@@ -167,45 +155,3 @@ miner 很闲的时候，可以少给或不给小费。
 <span style='color: gray'>挖矿收益</span>
 
 #### 51% attack
-
-## Ethereum
-
-<span style='color: gray'>以太坊</span>
-
-### Smart Contracts
-
-智能合约
-
-#### EVM
-
-以太坊虚拟机
-
-### Web3
-
-下一代互联网
-
-### NFT
-
-非同质化代币 Non-Fungible Token
-
-### DeFi
-
-去中心化金融
-
-### DAO
-
-去中心化自治组织 Decentralized Autonomous Organization
-
-### Beacon Chain
-
-信标链
-
-## Filecoin
-
-### IPFS
-
-InterPlanetary File System
-
----
-
-https://www.theurbanlist.com/a-list/Cryptocurrency-terms
