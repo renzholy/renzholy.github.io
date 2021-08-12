@@ -84,7 +84,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 同时产生了两个或两个以上的 [block](#block) ，它们指向了相同的前一个 block。
 
-可以理解为一个人生了两个孩子，怎么来继承遗产，有几种情况：
+比如一个人生了两个孩子，怎么来继承遗产，有几种情况：
 
 - 区块冲突：其中一个夭折了，剩下一个继承所有遗产。
 - 硬分叉：两个孩子生死决斗，赢的继承所有遗产。
@@ -116,21 +116,27 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 <span style='color: gray'>钱包</span>
 
-进行 [transaction](#transaction) 所必须的东西，分为 [address](#address) 和 [private key](#private-key) 两部分。
+进行 [transaction](#transaction) 所必须的东西，分为 [address](#address) 和 [private key](#private-key) 两部分，这两部分是一一对应的。
 
 #### Address
 
 <span style='color: gray'>钱包地址/公钥</span>
 
-[wallet](#wallet) 公开的部分，相当于银行卡账号。
+[wallet](#wallet) 公开的部分，相当于银行卡卡号。
 
-不同的是所有人都可以看到你卡里有多少 [token](#token)，以及历史 [transaction](#transaction)（一些拥有匿名交易功能的区块链除外）。
+不同的是所有人都可以看到你的 address 里有多少 [token](#token)，以及历史 [transaction](#transaction)（一些拥有匿名交易功能的区块链除外）。
+
+是随机生成的，不是某个中央机构发放的。
+
+如果一个 address 没有任何 transaction 或 token，那就没有人能知道它的存在。
 
 #### Private key
 
 <span style='color: gray'>私钥</span>
 
 [wallet](#wallet) 私密的部分，相当于银行卡密码。
+
+如果忘记了，永远找不回来。
 
 ##### Mnemonic Phrase
 
@@ -142,7 +148,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 <span style='color: gray'>硬件钱包</span>
 
-可以理解为网银盾。
+网银盾。
 
 ### Layer2
 
@@ -150,7 +156,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 附属于某个或多个 [blockchain](#blockchain) 的 blockchain。
 
-如果把 [bitcoin](#bitcoin) 当成央行，layer2 就是地方分行。程序员可以理解为加一层缓存。
+如果把 [bitcoin](#bitcoin) 当成央行，layer2 就是地方分行。
 
 bitcoin 平均 10 分钟才产生一个 [block](#block)，太慢了，所以在 layer2 上完成频繁的交易，再在 bitcoin 上进行汇总信息。
 
@@ -160,17 +166,25 @@ bitcoin 平均 10 分钟才产生一个 [block](#block)，太慢了，所以在 
 
 [miner](#miner) 把 [transaction](#transaction) 打包放进 [block](#block) 中，并完成 [POW](#POW) 的过程。
 
+有些 [blockchain](#blockchain) 不是这样的。
+
+#### Hash rate
+
+<span style='color: gray'>算力</span>
+
+进行 [POW](#POW) 时的计算能力。
+
 #### POW
 
 <span style='color: gray'>Proof of work，工作量证明</span>
 
-一种 [miner](#miner) 证明自己挖出了 [block](#block) 的方式。
+一种 [miner](#miner) 证明自己挖出了某个 [block](#block) 的方式。
 
 让计算机算难题，哪台计算机最先算对就有了工作量证明，算错的或者晚了一步的就白算。
 
 bitcoin 的计算难度越来越大，参与的人越来越多，最开始用 CPU 算，后来用 GPU 算，再后来用专用的硬件来算，这里统称为计算机。
 
-不是所有 [blockchain](#blockchain) 都是 POW。
+不是所有 [blockchain](#blockchain) 都是使用工作量进行证明。
 
 POW 费电。
 
@@ -186,7 +200,7 @@ POW 费电。
 
 一个计算机太慢，多个计算机组成超算就是矿池，吃大锅饭。
 
-矿池一般是中心化运营，运营者会收取手续费，也能保障你不白干。
+矿池一般是中心化运营，运营者会从中抽成，再按 [hash rate](#hash-rate) 的比例分成。
 
 ### Mining revenue
 
@@ -198,7 +212,7 @@ POW 费电。
 
 <span style='color: gray'>51% 算力攻击</span>
 
-用任何手段掌握半数以上的 [miner](#miner) 的计算能力，就可以篡改 [bitcoin](#bitcoin) 的历史 [block](#block)。
+用任何手段掌握半数以上的 [miner](#miner) 的 [hash rate](#hash-rate)，就可以篡改 [bitcoin](#bitcoin) 的历史 [block](#block)。
 
 超过 50%就行，不用到 51%。
 
