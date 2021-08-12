@@ -30,12 +30,8 @@
 
 信标链
 
-## Filecoin
+### Stablecoin
 
-### IPFS
+<span style='color: gray'>算法稳定币</span>
 
-InterPlanetary File System
-
----
-
-https://www.theurbanlist.com/a-list/Cryptocurrency-terms
+使用

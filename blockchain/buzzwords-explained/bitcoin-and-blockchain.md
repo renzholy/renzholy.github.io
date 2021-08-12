@@ -48,9 +48,9 @@
 
 #### Coinbase
 
-<span style='color: gray'>区块基础信息</span>
+<span style='color: gray'>比特币区块留言</span>
 
-[miner](#miner) 在 [block](#block) 里留的一段话，有长度限制。
+[miner](#miner) 在 [bitcoin](#bitcoin) [block](#block) 里留的一段话，有长度限制。
 
 著名交易所 Coinbase 的名字应该就是从这里来的（没有考证）。
 
@@ -59,6 +59,8 @@
 > EThe Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 
 在各种 [explorer](#explorer) 中可以看到，比如 [blockchair🔗](https://blockchair.com/bitcoin/block/0)。
+
+bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 #### Explorer
 
@@ -80,9 +82,19 @@ miner 很闲的时候，可以少给或不给小费。
 
 <span style='color: gray'>分叉</span>
 
+两个或两个以上的 [block](#block) 的前一个 block 是同一个 block。
+
+话有点绕，可以理解为一个人生了两个孩子，怎么来继承遗产，有几种情况：
+
+- 区块冲突：其中一个夭折了，剩下一个继承所有遗产。
+- 硬分叉：两个孩子生死决斗，赢的继承所有遗产。
+- 软分叉：两个孩子比赛，谁厉害谁继承的多，输的也有份。
+
 ### Transaction
 
 <span style='color: gray'>交易/转账</span>
+
+使用 [private key](#private-key) 进行签名，把 [token](#token) 从自己的 [address](#address) 转移到另一个 address 的过程。
 
 #### Pending transaction
 
@@ -94,7 +106,11 @@ miner 很闲的时候，可以少给或不给小费。
 
 <span style='color: gray'>代币、通证（可流通的数字权益证明）、密令（去中心化共识的加密数字令牌）</span>
 
-可以理解为钱。
+简单理解为钱。
+
+现实世界的钱由国家提供价值证明和流通保障，[blockchain](#blockchain) 中的 token 由发行者和所有 transfer token 的人提供价值证明和流通保障。
+
+并不是所有 token 都是去中心化的，一般 [stablecoin](./ethereum-and-smart-contract/#stablecoin) 都是中心化的。
 
 ### Wallet
 
@@ -120,7 +136,7 @@ miner 很闲的时候，可以少给或不给小费。
 
 <span style='color: gray'>助记词</span>
 
-使用 12 个单词来描述 [private key](#private-key)，更方便记忆，和 [private key](#private-key) 有同等作用，是一一对应的关系。
+使用 12 个单词来描述 [private key](#private-key)，更方便记忆。和 [private key](#private-key) 有同等作用，是一一对应的关系。
 
 ##### Hardware Wallet
 
@@ -132,26 +148,58 @@ miner 很闲的时候，可以少给或不给小费。
 
 <span style='color: gray'>二层网络/闪电网络</span>
 
+附属于某个或多个 [blockchain](#blockchain) 的 blockchain。
+
+如果把 [bitcoin](#bitcoin) 当成央行，layer2 就是地方分行。程序员可以理解为加一层缓存。
+
+bitcoin 平均 10 分钟才产生一个 [block](#block)，太慢了，所以在 layer2 上完成频繁的交易，再在 bitcoin 上进行汇总信息。
+
 ### Mining
 
 <span style='color: gray'>挖矿</span>
 
-[miner](#miner) 把 [transaction](#transaction) 打包放进 [block](#block) 中，并完成算法难题的过程。
+[miner](#miner) 把 [transaction](#transaction) 打包放进 [block](#block) 中，并完成 [POW](#POW) 的过程。
 
 #### POW
 
 <span style='color: gray'>Proof of work，工作量证明</span>
 
+一种 [miner](#miner) 证明自己挖出了 [block](#block) 的方式。
+
+让计算机算难题，哪台计算机最先算对就有了工作量证明，算错的或者晚了一步的就白算。
+
+bitcoin 的计算难度越来越大，参与的人越来越多，最开始用 CPU 算，后来用 GPU 算，再后来用专用的硬件来算，这里统称为计算机。
+
+不是所有 [blockchain](#blockchain) 都是 POW。
+
+POW 费电。
+
 #### Miner
 
 <span style='color: gray'>矿工</span>
+
+计算难题的计算机，也可以指用计算机算难题的人。
 
 #### Mining pool
 
 <span style='color: gray'>矿池</span>
 
+一个计算机太慢，多个计算机组成超算就是矿池，吃大锅饭。
+
+矿池一般是中心化运营，运营者会收取手续费，也能保障你不白干。
+
 ### Mining revenue
 
 <span style='color: gray'>挖矿收益</span>
 
+由两部分组成：block 中新产生的 [bitcoin](#bitcoin) 和 [transaction](#transaction) 里的 [gas](#gas)
+
 #### 51% attack
+
+<span style='color: gray'>51% 算力攻击</span>
+
+用任何手段掌握半数以上的 [miner](#miner) 的计算能力，就可以篡改 [bitcoin](#bitcoin) 的历史 [block](#block)。
+
+超过 50%就行，不用到 51%。
+
+不是每个 [blockchain](#blockchain) 都会遭到 51% 攻击。
