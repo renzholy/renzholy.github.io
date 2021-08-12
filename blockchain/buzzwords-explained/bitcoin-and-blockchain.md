@@ -68,7 +68,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 用于浏览 [blockchain](#blockchain) 中的数据的 App，一般是网页。
 
-基本上每个 [blockchain](#blockchain) 都有一个或多个官方或第三方提供的浏览器。
+基本上每个 blockchain 都有一个或多个官方或第三方提供的浏览器。
 
 #### Gas
 
@@ -76,19 +76,19 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 [transaction](#transaction) 的发起者给 [miner](#maner) 的小费。
 
-miner 很闲的时候，可以少给或不给小费。
+更多的小费可以加快 transaction ，但 miner 很闲的时候，可以少给或不给小费，仍然能够较快完成 transaction。
 
 ### Fork
 
 <span style='color: gray'>分叉</span>
 
-两个或两个以上的 [block](#block) 的前一个 block 是同一个 block。
+同时产生了两个或两个以上的 [block](#block) ，它们指向了相同的前一个 block。
 
-话有点绕，可以理解为一个人生了两个孩子，怎么来继承遗产，有几种情况：
+可以理解为一个人生了两个孩子，怎么来继承遗产，有几种情况：
 
 - 区块冲突：其中一个夭折了，剩下一个继承所有遗产。
 - 硬分叉：两个孩子生死决斗，赢的继承所有遗产。
-- 软分叉：两个孩子比赛，谁厉害谁继承的多，输的也有份。
+- 软分叉：两个孩子比赛，谁厉害谁继承的多，输的也有份。也有可能势均力敌，几乎平分。
 
 ### Transaction
 
