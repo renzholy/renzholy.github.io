@@ -15,6 +15,10 @@
 - [10](/weekly/10.md)
 - ...
 
+## Blockchain
+
+- [Blockchain Buzzwords Explained](/blockchain/buzzwords-explained/index.md)
+
 ## Web
 
 - [使用 React 后端渲染 SVG 图片](/web/使用React后端渲染SVG图片.md)
