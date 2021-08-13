@@ -6,7 +6,7 @@
 
 <span style='color: gray'>比特币</span>
 
-两种含义：一种 [blockchain](#blockchain) 技术；一种可以交易的 [token](#token)。
+两种含义：一种 [blockchain](#blockchain) ；一种 [token](#token)。
 
 ### Satoshi Nakamoto
 
@@ -46,7 +46,7 @@
 - [gas](#gas)
 - [coinbase](#coinbase)
 
-等等信息，因为 block 的“前一个 Block 是哪个”信息，所以从最新的 block 可以追溯到第一个 block，连成一个链条，所以叫做 [blockchain](#blockchain)。第一个 block 没有前一个 block，被称为 [genesis block](#genesis_block)。
+等等信息，因为 block 的“前一个 Block 是哪个”信息，所以从最新的 block 可以追溯到第一个 block，连成一个链条，所以被称为 [blockchain](#blockchain)。第一个 block 没有前一个 block，被称为 [genesis block](#genesis_block)。
 
 #### Genesis block
 
@@ -124,7 +124,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 简单理解为钱。
 
-现实世界的钱由国家提供价值证明和流通保障，[blockchain](#blockchain) 中的 token 由发行者和所有 transfer token 的人提供价值证明和流通保障。
+现实世界的钱由国家提供价值证明和流动性，[blockchain](#blockchain) 中的 token 由发行者和所有参与者提供价值证明和流动性。
 
 并不是所有 token 都是去中心化的，一般 [stablecoin](./ethereum-and-smart-contract/#stablecoin) 都是中心化的。
 
