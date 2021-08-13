@@ -16,6 +16,14 @@
 
 很多人自称是 [bitcoin](#bitcoin) 创造者，但都拿不出证据。如果有个人能够使用中本聪在 [genesis block](#genesis_block) 中的 [address](#address) `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` 进行一次 [transaction](#transaction)，并在此之前向大众公布该 transaction 的细节，那么就说明 TA 拥有这个 [wallet](#wallet) 的 [private key](#private-key) ，就能够证明 TA 是中本聪（或者是偷了中本聪的 wallet 的人）。
 
+### White paper
+
+<span style='color: gray'>白皮书</span>
+
+[blockchain](#blockchain) 的产品、技术文档
+
+也有黄皮书、紫皮书等等，取决于封面用的什么颜色。
+
 ### Blockchain
 
 <span style='color: gray'>区块链</span>
@@ -28,7 +36,7 @@
 
 [blockchain](#blockchain) 存储数据的基本单位。
 
-以 [bitcoin](#bitcoin) 为例，平均每 10 分钟由全体 [miner](#miner) 算出一个 block，每个 block 中存储了：
+以 [bitcoin](#bitcoin) 为例，平均每 10 分钟由某个 [miner](#miner) 算出一个 block，每个 block 中存储了：
 
 - 前一个 block 是哪个
 - 被哪个 [miner](#miner) 算出
@@ -45,6 +53,14 @@
 <span style='color: gray'>创世区块</span>
 
 每个 [blockchain](#blockchain) 的第一个 [block](#block)。
+
+通常写在代码里或由环境变量指定。
+
+##### Testnet
+
+<span style='color: gray'>测试网络</span>
+
+测试环境，和主 blockchain 的 [genesis block](#genesis_block) 不同，代码可能相同也可能不同。
 
 #### Coinbase
 
@@ -124,7 +140,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 [wallet](#wallet) 公开的部分，相当于银行卡卡号。
 
-不同的是所有人都可以看到你的 address 里有多少 [token](#token)，以及历史 [transaction](#transaction)（一些拥有匿名交易功能的区块链除外）。
+不同的是：所有人都可以看到你的（以及其他人的） address 里有多少 [token](#token)，以及历史 [transaction](#transaction)（一些拥有匿名交易功能的区块链除外）。
 
 是随机生成的，不是某个中央机构发放的。
 
