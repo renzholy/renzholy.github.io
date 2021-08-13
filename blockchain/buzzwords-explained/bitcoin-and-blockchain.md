@@ -14,7 +14,7 @@
 
 [bitcoin](#bitcoin) 创造者对自己的称呼。
 
-很多人自称是 [bitcoin](#bitcoin) 创造者，但都拿不出证据。如果有个人能够使用中本聪在 [genesis block](#genesis_block) 中的 [address](#address) `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` 进行一次 [transaction](#transaction)，并在此之前向大众公布该 transaction 的细节，那么就说明 TA 拥有这个 [wallet](#wallet) 的 [private key](#private-key) ，就能够证明 TA 是中本聪（或者是偷了中本聪的 wallet 的人）。
+很多人自称是 bitcoin 创造者，但都拿不出证据。如果有个人能够使用中本聪在 [genesis block](#genesis_block) 中的 [address](#address) `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` 进行一次 [transaction](#transaction)，并在此之前向大众公布该 transaction 的细节，那么就说明 TA 拥有这个 [wallet](#wallet) 的 [private key](#private-key) ，就能够证明 TA 是中本聪（或者是偷了中本聪的 wallet）。
 
 ### White paper
 
@@ -39,6 +39,7 @@
 以 [bitcoin](#bitcoin) 为例，平均每 10 分钟由某个 [miner](#miner) 算出一个 block，每个 block 中存储了：
 
 - 前一个 block 是哪个
+- 区块的高度/序号，在前一个 block 基础上 +1
 - 被哪个 [miner](#miner) 算出
 - 被算出来的时间点
 - 产出了多少新的币
@@ -230,6 +231,6 @@ POW 费电。
 
 用任何手段掌握半数以上的 [miner](#miner) 的 [hash rate](#hash-rate)，就可以篡改 [bitcoin](#bitcoin) 的历史 [block](#block)。
 
-超过 50%就行，不用到 51%。
+超过 50% 即可，无需到 51%。
 
 不是每个 [blockchain](#blockchain) 都会遭到 51% 攻击。
