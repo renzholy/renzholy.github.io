@@ -185,7 +185,7 @@ bitcoin 平均 10 分钟才产生一个 [block](#block)，太慢了，所以在 
 
 [miner](#miner) 把 [transaction](#transaction) 打包放进 [block](#block) 中，并完成 [POW](#POW) 的过程。
 
-有些 [blockchain](#blockchain) 不是这样的。
+有些 [blockchain](#blockchain) 不是 POW，而是采用其他证明方式。
 
 #### Hash rate
 
