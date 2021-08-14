@@ -1,14 +1,30 @@
-## Ethereum & Smart Contract
+# Ethereum & Smart Contract
+
+<span style='color: gray'>以太坊与智能合约</span>
+
+## Ethereum
 
 <span style='color: gray'>以太坊</span>
 
 ### Smart Contracts
 
-智能合约
+<span style='color: gray'>智能合约</span>
+
+在 transaction 中加入可以执行的代码，就被称为智能合约。
+
+### Layer2
+
+<span style='color: gray'>二层网络</span>
+
+附属于某个或多个 blockchain 的 blockchain。
+
+如果把主 blockchain 当成央行，layer2 就是地方分行。在 layer2 上完成频繁的交易，再在主 blockchain 上汇总交易信息。
 
 #### EVM
 
-以太坊虚拟机
+<span style='color: gray'>以太坊虚拟机</span>
+
+以太坊用来执行 [smart contracts](#smart-contracts) 中的代码的虚拟运行环境。
 
 ### Web3
 

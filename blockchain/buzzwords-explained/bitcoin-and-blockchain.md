@@ -121,11 +121,13 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 ### Token
 
-<span style='color: gray'>代币、通证（可流通的数字权益证明）、密令（去中心化共识的加密数字令牌）</span>
+<span style='color: gray'>代币</span>
 
-简单理解为钱。
+可流通、拆分的数字权益证明，去中心化共识的加密数字令牌。
 
-现实世界的钱由国家提供价值证明和流动性，[blockchain](#blockchain) 中的 token 由发行者和所有参与者提供价值证明和流动性。
+每个 blockchain 有一个 native token 或称 coin，在其基础之上有多种 token。
+
+可以把 coin 理解为货币，token 理解为 Q 币，[NFT](./ethereum-and-smart-contract/#nft) 理解为 QQ 秀皮肤。
 
 并不是所有 token 都是去中心化的，一般 [stablecoin](./ethereum-and-smart-contract/#stablecoin) 都是中心化的。
 
