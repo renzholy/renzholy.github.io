@@ -145,7 +145,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 不同的是：所有人都可以看到你的（以及其他人的） address 里有多少 [token](#token)，以及历史 [transaction](#transaction)（一些拥有匿名交易功能的区块链除外）。
 
-是随机生成的，不是某个中央机构发放的。
+是随机生成的，不是某个中央机构发放的，并且是匿名的。
 
 如果一个 address 没有任何 transaction 或 token，那就没有人能知道它的存在。
 
@@ -167,7 +167,7 @@ bitcoin 里的称为 coinbase，其他 blockchain 不一定称为 coinbase。
 
 <span style='color: gray'>硬件钱包</span>
 
-网银盾。
+类似于网银盾。
 
 ### Layer2
 

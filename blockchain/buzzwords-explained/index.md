@@ -23,6 +23,6 @@
 分为以下章节：
 
 - [Bitcoin & Blockchain](./bitcoin-and-blockchain.md)
-- [Ethereum & Smart Contract](./ethereum-and-smart-contract.md)
-- [Uniswap & DeFi](./uniswap-and-defi.md)
-- [Filecoin & NFT](./filecoin-and-nft.md)
+- Ethereum & Smart Contract
+- Uniswap & DeFi
+- Filecoin & NFT
