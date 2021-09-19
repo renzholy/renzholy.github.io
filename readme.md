@@ -1,6 +1,7 @@
 ## Weekly
 
-- [27 🆕](/weekly/27.md)
+- [28 🆕](/weekly/28.md)
+- [27](/weekly/27.md)
 - [26](/weekly/26.md)
 - [25](/weekly/25.md)
 - [24](/weekly/24.md)
@@ -9,14 +10,6 @@
 - [21](/weekly/21.md)
 - [20](/weekly/20.md)
 - [19](/weekly/19.md)
-- [18](/weekly/18.md)
-- [17](/weekly/17.md)
-- [16](/weekly/16.md)
-- [15](/weekly/15.md)
-- [14](/weekly/14.md)
-- [13](/weekly/13.md)
-- [12](/weekly/12.md)
-- [11](/weekly/11.md)
 - ...
 
 ## Blockchain
