@@ -15,10 +15,6 @@
 - [19](/weekly/19.md)
 - ...
 
-## Blockchain
-
-- [Blockchain Buzzwords Explained](/blockchain/buzzwords-explained/index.md)
-
 ## Web
 
 - [使用 React 后端渲染 SVG 图片](/web/使用React后端渲染SVG图片.md)
@@ -30,7 +26,3 @@
 ## 3C
 
 - [用过的显示器](/3c/monitors.md)
-
-## 笔记
-
-- [人民币汇率与人民币国际化](/note/人民币汇率与人民币国际化/index.md)
