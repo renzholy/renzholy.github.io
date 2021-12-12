@@ -16,7 +16,7 @@ jobs:
           index: /readme
           cname: fpt.ink
           header: About,/about
-          footer: GitHub,https://github.com/renzholy;Twitter,http://twitter.com/rezholy;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
+          footer: GitHub,https://github.com/renzholy;Twitter,http://twitter.com/aliez_eth;Jike,https://web.okjike.com/u/d25026f2-18ce-48aa-9ea7-c05a25446368
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
