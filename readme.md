@@ -1,6 +1,7 @@
 ## Weekly
 
-- [39 🆕](/weekly/39.md)
+- [40 🆕](/weekly/40.md)
+- [39](/weekly/39.md)
 - [38](/weekly/38.md)
 - [37](/weekly/37.md)
 - [36](/weekly/36.md)
@@ -10,10 +11,6 @@
 - [32](/weekly/32.md)
 - [31](/weekly/31.md)
 - [30](/weekly/30.md)
-- [29](/weekly/29.md)
-- [28](/weekly/28.md)
-- [27](/weekly/27.md)
-- [26](/weekly/26.md)
 - ...
 
 ## Web
