@@ -1,6 +1,7 @@
 ## Weekly
 
-- [43 🆕](/weekly/43.md)
+- [44 🆕](/weekly/44.md)
+- [43](/weekly/43.md)
 - [42](/weekly/42.md)
 - [41](/weekly/41.md)
 - [40](/weekly/40.md)
